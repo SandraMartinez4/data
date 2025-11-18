@@ -1,3 +1,5 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles.css' %}">
 
 <h1>Subir archivo .ipynb</h1>
 <form method="post" enctype="multipart/form-data">
@@ -5,3 +7,13 @@
   <input type="file" name="file" />
   <button type="submit">Subir</button>
 </form>
+<div class="container">
+<h1>Subir archivo .ipynb</h1>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="file">
+    <input type="submit" value="Subir">
+</form>
+
+</div>

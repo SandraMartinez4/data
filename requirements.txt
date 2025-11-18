@@ -1,0 +1,13 @@
+django
+nbconvert
+nbformat
+jinja2
+traitlets
+mistune
+pygments
+beautifulsoup4
+lxml
+six
+matplotlib
+gunicorn
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Notebook Viewer</title>
+
+    <!-- 🎨 COLORES Y ESTILOS -->
+    <style>
+        body {
+            background-color: #f0f4ff;        /* Color de fondo suave */
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            max-width: 900px;
+            margin: auto;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+        }
+
+        /* Estilo para títulos del notebook */
+        h1, h2, h3 {
+            color: #3366cc;
+        }
+
+        /* Quitar barras feas del código si aparece algo */
+        pre, code {
+            background: #eef2ff !important;
+            border-radius: 8px;
+            padding: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Aquí va el notebook exportado -->
+        {{ notebook_html|safe }}
+    </div>
+
+</body>
+</html>

@@ -1,3 +1,12 @@
 
 <h1>Archivo subido</h1>
 <a href="/view/{{filename}}/">Ver notebook</a>
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+
+<div class="container">
+<h1>Archivo subido correctamente</h1>
+
+<a href="/view/{{filename}}/">➡ Ver Notebook</a>
+</div>
